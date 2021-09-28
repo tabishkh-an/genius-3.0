@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="header/header.css">
+    <title>Friends Challenge</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            margin-top: 64px;
+        }
+
+        .left-panel {
+            text-align: left;
+        }
+
+        .left-panel a {
+            display: block;
+            text-decoration: none;
+            color: #3F5843;
+            padding: 14px 0;
+            font-weight: 300;
+        }
+
+
+
+        .iconify {
+            width: 24px;
+            height: 24px;
+            color: #3F5843;
+        }
+
+        .course-tabs {
+            width: 300px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 0;
+            background: #393D3A;
+            color: #D4D6D5;
+            font-size: 14px;
+            border-radius: 30px;
+        }
+
+        .green-ball {
+            margin-top: 6px;
+            height: 48px;
+            background: url('green-ball.png') no-repeat center;
+            background-size: contain;
+        }
+
+        .search-bar {
+            /* background: #d4d6d55b; */
+            /* max-width: 730px; */
+            margin-top: 32px;
+            border-radius: 8px;
+            /* padding: 8px; */
+        }
+
+        .input-style {
+            width: 100%;
+            display: inline-block;
+            background: transparent;
+            padding: .675rem .75rem;
+        }
+
+
+        .magnify {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 0;
+            /* border-right: 1px solid gray; */
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+        }
+
+        p {
+            margin: 0 !important;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        @media only screen and (max-width: 812px) {
+            .main-container-margin {
+                margin-top: 248px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="left-section">
+            <span class="menu-toggle material-icons">
+                menu
+            </span>
+            <span class="cheenta-name"><span class="bold">Cheenta </span>Genius</span>
+        </section>
+
+        <nav class="navigation-menu">
+            <a href="#">practice</a>
+            <a href="#">ask</a>
+            <a href="#">learn</a>
+            <a href="#" style="font-weight: bold;">friends</a>
+            <a href="#">teach</a>
+            <a href="#">events</a>
+        </nav>
+        <section class="right-section">
+            <a href="#">Progress</a>
+            <div class="ellipse"></div>
+        </section>
+    </header>
+    <main>
+        <div class="container main-container">
+
+            <div class="row" style="margin-top: 72px;">
+                <div class="col-2 left-panel">
+                    <a href="#">My Challenges</a>
+                    <a href="#">Challenge Peers</a>
+                    <a href="#">My Score</a>
+                    <a href="#">Leaderboard</a>
+
+                </div>
+
+                <div class="col-lg-7 col-xs-12 me-4 px-4" style="text-align: center;">
+                    <div class="row search-bar">
+                        <div class="col-1 magnify" style="background: #d4d6d55b; border-radius: 8px 0 0 8px;"><span
+                                class="iconify" data-icon="mdi:magnify" data-inline="false"></span>
+                        </div>
+                        <div class="col-10"
+                            style="background: #d4d6d55b; border-radius: 0 8px 8px 0; padding-right: 0;">
+                            <input type="text" class="form-control input-style"
+                                style="border: none; background: transparent;" placeholder="Search peers">
+                        </div>
+                        <div class="col-1" style="display: inline-block;">
+                            <button class="btn"
+                                style="background-color: #3F5843; border-radius: 20px; height: 50px;"><span
+                                    class="iconify" style="color: #D4D6D5; width: 32px; height: 32px;"
+                                    data-icon="bi:arrow-right-short" data-inline="false"></span></button>
+                        </div>
+                    </div>
+                    <div class="row my-4 p-3 justify-content-around"
+                        style="background-color: #D4D6D5; border-radius: 8px;">
+
+                        <div class="col-auto my-2">
+                            <img class="img-fluid" src="issac-newton.png" alt="profile-pic">
+                        </div>
+                        <div class="col-auto my-2">
+                            <p style="color: #3F5843; font-weight: 300;">Issac Newton</p>
+                            <span class="iconify" style="color: #111;" data-icon="carbon:location-filled"></span>&nbsp;
+                            <p style="font-size: 17px; display: inline-block;">United States</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>ISI CMI</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Goals</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>500</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Score</p>
+                        </div>
+                        <div class="col-auto mt-4 mb-2">
+                            <button class="btn"
+                                style="background-color: #3F5843; color: #D4D6D5; border-radius: 10px;">Challenge</button>
+                        </div>
+                    </div>
+                    <div class="row my-4 p-3 justify-content-around"
+                        style="background-color: #D4D6D5; border-radius: 8px;">
+
+                        <div class="col-auto my-2">
+                            <img class="img-fluid" src="issac-newton.png" alt="profile-pic">
+                        </div>
+                        <div class="col-auto my-2">
+                            <p style="color: #3F5843; font-weight: 300;">Issac Newton</p>
+                            <span class="iconify" style="color: #111;" data-icon="carbon:location-filled"></span>&nbsp;
+                            <p style="font-size: 17px; display: inline-block;">United States</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>ISI CMI</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Goals</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>500</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Score</p>
+                        </div>
+                        <div class="col-auto mt-4 mb-2">
+                            <button class="btn"
+                                style="background-color: #3F5843; color: #D4D6D5; border-radius: 10px;">Challenge</button>
+                        </div>
+                    </div>
+                    <div class="row my-4 p-3 justify-content-around"
+                        style="background-color: #D4D6D5; border-radius: 8px;">
+
+                        <div class="col-auto my-2">
+                            <img class="img-fluid" src="issac-newton.png" alt="profile-pic">
+                        </div>
+                        <div class="col-auto my-2">
+                            <p style="color: #3F5843; font-weight: 300;">Issac Newton</p>
+                            <span class="iconify" style="color: #111;" data-icon="carbon:location-filled"></span>&nbsp;
+                            <p style="font-size: 17px; display: inline-block;">United States</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>ISI CMI</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Goals</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>500</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Score</p>
+                        </div>
+                        <div class="col-auto mt-4 mb-2">
+                            <button class="btn"
+                                style="background-color: #3F5843; color: #D4D6D5; border-radius: 10px;">Challenge</button>
+                        </div>
+                    </div>
+                    <div class="row my-4 p-3 justify-content-around"
+                        style="background-color: #D4D6D5; border-radius: 8px;">
+
+                        <div class="col-auto my-2">
+                            <img class="img-fluid" src="issac-newton.png" alt="profile-pic">
+                        </div>
+                        <div class="col-auto my-2">
+                            <p style="color: #3F5843; font-weight: 300;">Issac Newton</p>
+                            <span class="iconify" style="color: #111;" data-icon="carbon:location-filled"></span>&nbsp;
+                            <p style="font-size: 17px; display: inline-block;">United States</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>ISI CMI</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Goals</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>500</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Score</p>
+                        </div>
+                        <div class="col-auto mt-4 mb-2">
+                            <button class="btn"
+                                style="background-color: #3F5843; color: #D4D6D5; border-radius: 10px;">Challenge</button>
+                        </div>
+                    </div>
+                    <div class="row my-4 p-3 justify-content-around"
+                        style="background-color: #D4D6D5; border-radius: 8px;">
+
+                        <div class="col-auto my-2">
+                            <img class="img-fluid" src="issac-newton.png" alt="profile-pic">
+                        </div>
+                        <div class="col-auto my-2">
+                            <p style="color: #3F5843; font-weight: 300;">Issac Newton</p>
+                            <span class="iconify" style="color: #111;" data-icon="carbon:location-filled"></span>&nbsp;
+                            <p style="font-size: 17px; display: inline-block;">United States</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>ISI CMI</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Goals</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>500</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Score</p>
+                        </div>
+                        <div class="col-auto mt-4 mb-2">
+                            <button class="btn"
+                                style="background-color: #3F5843; color: #D4D6D5; border-radius: 10px;">Challenge</button>
+                        </div>
+                    </div>
+                    <div class="row my-4 p-3 justify-content-around"
+                        style="background-color: #D4D6D5; border-radius: 8px;">
+
+                        <div class="col-auto my-2">
+                            <img class="img-fluid" src="issac-newton.png" alt="profile-pic">
+                        </div>
+                        <div class="col-auto my-2">
+                            <p style="color: #3F5843; font-weight: 300;">Issac Newton</p>
+                            <span class="iconify" style="color: #111;" data-icon="carbon:location-filled"></span>&nbsp;
+                            <p style="font-size: 17px; display: inline-block;">United States</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>ISI CMI</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Goals</p>
+                        </div>
+                        <div class="col-auto my-2">
+                            <p>500</p>
+                            <p style="text-align: left; font-size: 16px; color: #3F5843;">Score</p>
+                        </div>
+                        <div class="col-auto mt-4 mb-2">
+                            <button class="btn"
+                                style="background-color: #3F5843; color: #D4D6D5; border-radius: 10px;">Challenge</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto">
+                    <div class="row">
+                        <div class="col-auto  my-3 course-tabs">
+                            <div class="row ">
+                                <div class="col-4  green-ball"></div>
+                                <div class="col-8 " style="padding: 8px 0;">
+                                    <div style="font-size: 24px; font-weight: 400;">Number Theory</div>
+                                    <div style="font-weight: bold; color: #fff;">Free with paid upgrades</div>
+                                </div>
+                            </div>
+                            <div class="row  py-1">
+                                <div class="col-5 " style="font-style: italic; padding-left: 28px;">created by</div>
+                                <div class="col-7 " style="font-weight: 300; font-size: 17px; padding: 0;">Cheenta
+                                    Academy
+                                </div>
+                            </div>
+                            <div class="row  py-2">
+                                <div class="col-8 " style="font-weight: 300; padding-left: 28px;">Useful for: PRMO;
+                                    ISI-CMI</div>
+                                <div class="col-3  mt-3" style="color: #B69B7D; font-weight: bold;">explore</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="header/header.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

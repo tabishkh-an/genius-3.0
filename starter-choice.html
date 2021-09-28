@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="header/header.css">
+    <title>Starter Choice</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            margin-top: 64px;
+        }
+
+        .cover-photo {
+            background: url('cover-photo-holder.png') no-repeat center;
+            background-size: cover;
+            border-radius: 30px 0 0 0;
+            text-align: center;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-panel {
+            text-align: left;
+        }
+
+        .left-panel a {
+            font-weight: 300;
+            display: block;
+            text-decoration: none;
+            color: #3F5843;
+            padding: 14px 0;
+        }
+
+        .iconify {
+            width: 24px;
+            height: 24px;
+            color: #3F5843;
+        }
+
+        @media only screen and (max-width: 812px) {
+            .main-container-margin {
+                margin-top: 248px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="left-section">
+            <span class="menu-toggle material-icons">
+                menu
+            </span>
+            <span class="cheenta-name"><span class="bold">Cheenta </span>Genius</span>
+        </section>
+
+        <nav class="navigation-menu">
+            <a href="#">practice</a>
+            <a href="#">ask</a>
+            <a href="#">learn</a>
+            <a href="#">friends</a>
+            <a href="#">teach</a>
+            <a href="#">events</a>
+        </nav>
+        <section class="right-section">
+            <a href="#">Progress</a>
+            <div class="ellipse"></div>
+        </section>
+    </header>
+    <main>
+        <div class="container main-container">
+            <div class="cover-photo mb-4">
+                <p style="margin: 0; font-size: 48px; color: #fff; font-weight: 300;">Cheenta Academy</p>
+            </div>
+
+            <div class="row" style="margin-top: 72px;">
+                <div class="col-3 left-panel">
+                    <a href="#">Schedule</a>
+                    <a href="#">Activities</a>
+                    <a href="#">People  </a>
+                    <a href="#">Grades</a>
+                    <a href="#" style="padding-bottom: 0;">Forum</a>
+
+                    <hr style="width: 48px; height: 3px; color: #D4D6D5; margin: 24px 0;">
+                    
+                    <a href="#" style="padding: 0;">Practice</a>
+                    <a href="#" style="padding: 16px 0;">Learn</a>
+
+                    <hr style="width: 96px; height: 3px; color: #D4D6D5;">
+                    <a href="#" style="padding: 0;"><span class="iconify" data-icon="eos-icons:compass" data-inline="false"></span>&nbsp;&nbsp;Browse</a>
+                    <hr style="width: 96px; height: 3px; color: #D4D6D5;">
+                </div>
+                <div class="col-9" style="text-align: center; position: relative;">
+                    <h1 style="font-size: 48px; color: #3F5843; font-weight: 300; margin-bottom: 16px;">Welcome to Number Theory</h1>
+                    <hr class="mb-5" style="padding-top: 1px; margin: auto; width: 75%; color: #000;">
+                    <div class="row d-flex justify-content-center align-items-center" style="margin-top: 120px;">
+                        <div class="col-2 mx-5">
+                            <span class="iconify my-1" style="width: 48px; height: 48px" data-icon="tabler:math-function" data-inline="false"></span>
+                            <span style="display: block; font-weight: 300; font-size: 24px;">practice</span>
+                        </div>
+                        <div class="col-2 mx-5">
+                            <span class="iconify my-1" style="width: 48px; height: 48px" data-icon="dashicons:welcome-learn-more" data-inline="false"></span>
+                            <span style="display: block; font-weight: 300; font-size: 24px;">learn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="header/header.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d6d5;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.left-section .bold {
+    color: #3F5843;
+    font-weight: bold;
+}
+.left-section .cheenta-name {
+    margin-left: 24px;
+}
+
+.menu-toggle {
+    margin-left: 24px;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    color: #3F5843;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu a {
+    color: #393D3A;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 24px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.right-section a {
+    color: #3F5843;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.right-section .ellipse {
+    width: 48px;
+    height: 48px;
+    background: url(ellipse1.png) no-repeat center;
+    background-size: contain;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 812px) {
+    header {
+        overflow: visible;
+    }
+
+    .navigation-menu {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 80px;
+        overflow: hidden;
+        display: block;
+        max-height: 0;
+        background: #fff;
+    }
+
+    .navigation-menu a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .left-section .cheenta-name {
+        margin-left: 16px;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+    .show {
+        max-height: 240px;
+    }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d6d5;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.left-section .bold {
+    color: #3F5843;
+    font-weight: bold;
+}
+
+.left-section .cheenta-name {
+    margin-left: 24px;
+}
+
+.menu-toggle {
+    margin-left: 24px;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    color: #3F5843;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu a {
+    color: #393D3A;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 24px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.right-section a {
+    color: #3F5843;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.right-section .ellipse {
+    width: 48px;
+    height: 48px;
+    background: url(ellipse1.png) no-repeat center;
+    background-size: contain;
+    margin-left: 20px;
+}
+
+.bottom-navigation-menu {
+    display: none;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    box-shadow: 1px 0 4px 0 rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 10px 0;
+    /* border: 2px solid red; */
+    background-color: #fff;
+}
+
+.bottom-navigation-menu a {
+    color: #1B1719;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: auto;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+
+.left-panel-toggle {
+    margin-left: 24px;
+    /* margin-top: 48px; */
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 26px;
+}
+
+@media only screen and (max-width: 812px) {
+    .main-container-margin {
+        margin-top: 248px;
+    }
+
+    .left-panel {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+    .left-panel {
+        display: none;
+        position: absolute;
+        background: #fff;
+        z-index: 9999;
+        border-radius: 0 20px 0 0;
+        border: 1px solid #efefef;
+        width: 160px;
+    }
+
+    /* .question-row {
+        justify-content: center;
+    } */
+    .left-panel-toggle {
+        display: inline-block;
+        position: absolute;
+        background: #d4d6d5;
+        z-index: 4;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .show-left-panel {
+        display: block;
+    }
+}
+/* ------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 990px) {
+    header {
+        overflow: visible;
+    }
+    .navigation-menu {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+        top: 80px;
+        overflow: hidden;
+        display: block;
+        max-height: 0;
+        background: #fff;
+    }
+    .navigation-menu a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .left-section .cheenta-name {
+        margin-left: 16px;
+    }
+    .menu-toggle {
+        display: inline-block;
+    }
+    .show {
+        max-height: 240px;
+    }
+    .bottom-navigation-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

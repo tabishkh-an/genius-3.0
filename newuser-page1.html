@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="header/header.css">
+    <title>newuser-page1</title>
+    <style>
+        h1 {
+            font-weight: 300;
+            color: #3F5843;
+        }
+
+        .label-style {
+            display: block;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        .input-style {
+            width: 30%;
+            display: inline-block;
+            background: #C4C4C4;
+        }
+
+        .form-control::-webkit-input-placeholder {
+            color: black;
+        }
+
+        .main-container {
+            margin-top: 64px;
+        }
+
+        @media only screen and (max-width: 812px) {
+            .main-container-margin {
+                margin-top: 248px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="left-section">
+            <span class="menu-toggle material-icons">
+                menu
+            </span>
+            <span class="cheenta-name"><span class="bold">Cheenta </span>Genius</span>
+        </section>
+
+        <nav class="navigation-menu">
+            <a href="#">practice</a>
+            <a href="#">ask</a>
+            <a href="#">learn</a>
+            <a href="#">friends</a>
+            <a href="#">teach</a>
+            <a href="#">events</a>
+        </nav>
+        <section class="right-section">
+            <a href="#">Progress</a>
+            <div class="ellipse"></div>
+        </section>
+    </header>
+    <main>
+        <div class="container main-container">
+            <h1 style="text-align: center;">Lets get you started</h1>
+        </div>
+        <hr style="width: 75%; margin: auto; margin-top: 20px;">
+
+        <div class="container" style="width: 60%; margin: 64px auto 0;">
+            <form>
+                <div class="form-group">
+                    <label for="name" class="label-style">What is your name?</label>
+                    <input type="text" class="form-control my-4 input-style" id="name" placeholder="First Name">
+                    <input type="text" class="form-control my-4 input-style" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="dob" class="label-style">What is your Date of Birth?</label>
+                    <input type="date" id="dob" class="form-control my-4 input-style" style="width: 150px;">
+                </div>
+                <div class="form-group">
+                    <label for="country" class="label-style">What is your country of residence?</label>
+                    <select class="form-select my-4" aria-label="Default select example"
+                        style="width: 112px; background-color: #C4C4C4;">
+                        <option selected>Country</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </form>
+            <button type="submit"
+                style="margin-bottom: 20px; background: transparent; border: none; float: right; font-size: 48px; font-weight: 300; color: #3F5843;">next</button>
+        </div>
+    </main>
+
+
+    <script src="header/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

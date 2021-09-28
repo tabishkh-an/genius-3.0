@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="header/header.css">
+    <title>Starter Choice</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            margin-top: 64px;
+        }
+
+        .search-bar {
+            border-radius: 8px;
+            background: #393D3A;
+            border-radius: 30px 0 0 0;
+            /* padding: 8px; */
+        }
+
+        .pencil {
+            display: inline-block;
+            /* border-right: 1px solid gray; */
+        }
+
+        .student-image {
+            background: url('./header/ellipse1.png') no-repeat center;
+            background-size: contain;
+        }
+
+        .input-style {
+            width: 90%;
+            display: inline-block;
+            background: transparent;
+            padding: .675rem .75rem;
+        }
+
+
+        .form-control:focus {
+            box-shadow: none;
+        }
+
+        .left-panel {
+            text-align: left;
+        }
+
+        .left-panel a {
+            display: block;
+            text-decoration: none;
+            color: #3F5843;
+            padding: 6px 0;
+            font-weight: 300;
+        }
+
+
+
+
+        .iconify {
+            width: 24px;
+            height: 24px;
+            color: #3F5843;
+        }
+
+        .resolved {
+            background: #3F5843;
+            color: #D4D6D5;
+            width: 122px;
+            height: 32px;
+            border-radius: 10px;
+            padding-top: 3px;
+        }
+
+        @media only screen and (max-width: 812px) {
+            .main-container-margin {
+                margin-top: 248px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="left-section">
+            <span class="menu-toggle material-icons">
+                menu
+            </span>
+            <span class="cheenta-name"><span class="bold">Cheenta </span>Genius</span>
+        </section>
+
+        <nav class="navigation-menu">
+            <a href="#">practice</a>
+            <a href="#" style="font-weight: bold;">ask</a>
+            <a href="#">learn</a>
+            <a href="#">friends</a>
+            <a href="#">teach</a>
+            <a href="#">events</a>
+        </nav>
+        <section class="right-section">
+            <a href="#">Progress</a>
+            <div class="ellipse"></div>
+        </section>
+    </header>
+    <main>
+        <div class="container main-container">
+
+            <div class="row" style="margin-top: 72px;">
+                <div class="col-3 left-panel">
+                    <a href="#">My Posts</a>
+                    <a href="#">All Posts</a>
+                </div>
+
+                <div class="col-auto">
+
+                    <div class="row search-bar p-2 mb-5" style="max-width: 560px;">
+                        <div class="col-1 student-image">
+
+                        </div>
+                        <div class="col ms-2" style="padding-right: 0; background-color: #fff; border-radius: 10px;">
+                            <span class="iconify pencil" data-icon="mdi:lead-pencil" data-inline="false"></span></span>
+
+                            <input type="text" class="form-control input-style"
+                                style="border: none; background: transparent;" placeholder="Search by subject, contest">
+                        </div>
+                        <div class="col-2 d-none"></div>
+                    </div>
+
+                    <div class="row p-2">
+                        <div class="col">
+                            <div class="row"
+                                style="background: #d4d6d525; border-radius: 30px 0 0 0; max-width: 560px;">
+                                <div class="col">
+                                    <div class="row pt-2">
+                                        <div class="col-2 mt-3 student-image" style="height: 64px;"></div>
+                                        <div class="col-9" style="padding: 8px 0; color: #393D3A;">
+                                            <div style="font-size: 17px; font-weight: bold;">Ashani Daspupta</div>
+                                            <div style="font-weight: 300; font-style: italic;">Program: Math Olympiad
+                                                Level 5</div>
+                                            <div style="font-weight: 200; color: #1B1719;">23 Janurary, 2021</div>
+                                        </div>
+                                        <div class="col-1 mt-2"><span style="font-weight: bold;" class="iconify"
+                                                data-icon="carbon:overflow-menu-vertical" data-inline="false"></span>
+                                        </div>
+                                    </div>
+                                    <hr style="min-width: 90%; color: #D4D6D5;">
+                                    <div class="row ps-2">
+                                        <div class="col-auto">
+                                            <p>A root of unity, occasionally called a de Moivre number, is any complex
+                                                number that yields 1 when raised to some positive integer power n.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row ps-2">
+                                        <div class="col-auto">
+                                            <img src="Carpet3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <hr style="min-width: 90%; color: #D4D6D5;">
+                                    <div class="row pb-3 ps-2" style="color: #3F5843">
+                                        <div class="col-auto pe-5 me-5 mt-2" style="border-right: 1px solid #D4D6D5;">
+                                            <span>Mark Resolved</span>
+                                        </div>
+                                        <div class="col-auto mt-2">
+                                            <span class="iconify" data-icon="mdi:comment-text-outline"
+                                                data-inline="false"></span>
+                                            <span>Comment</span>
+                                        </div>
+                                        <div class="col-auto ms-5  mt-2">
+                                            <span class="iconify" data-icon="mdi:hand-heart" data-inline="false"></span>
+                                            <span>Love</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5"
+                                style="background: #d4d6d525; border-radius: 30px 0 0 0; max-width: 560px;">
+                                <div class="col col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row pt-2">
+                                        <div class="col-2 mt-3 student-image" style="height: 64px;"></div>
+                                        <div class="col-6" style="padding: 8px 0; color: #393D3A;">
+                                            <div style="font-size: 17px; font-weight: bold;">Ashani Daspupta</div>
+                                            <div style="font-weight: 300; font-style: italic;">Goal: Math Olympiad
+                                                (PRMO)</div>
+                                            <div style="font-weight: 200; color: #1B1719;">23 Janurary, 2021</div>
+                                        </div>
+                                        <div class="col-auto mt-2 resolved">
+
+                                            <span class="iconify" style="color: #D4D6D5; margin-right: 8px;"
+                                                data-icon="zmdi:check-all" data-inline="false"></span>Resolved
+
+                                        </div>
+                                        <div class="col-auto mt-2">
+                                            <span class="iconify" data-icon="carbon:overflow-menu-vertical"
+                                                data-inline="false"></span>
+                                        </div>
+                                    </div>
+                                    <hr style="min-width: 90%; color: #D4D6D5;">
+                                    <div class="row ps-2">
+                                        <div class="col-auto">
+                                            <p>A root of unity, occasionally called a de Moivre number, is any complex
+                                                number that yields 1 when raised to some positive integer power n.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row ps-2">
+                                        <div class="col-auto">
+                                            <img src="Carpet3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <hr style="min-width: 90%; color: #D4D6D5;">
+                                    <div class="row pb-3 ps-2" style="color: #3F5843">
+                                        <div class="col-auto pe-5 me-5 mt-2" style="border-right: 1px solid #D4D6D5;">
+                                            <span>Reopen Ticket</span>
+                                        </div>
+                                        <div class="col-auto mt-2">
+                                            <span class="iconify" data-icon="mdi:comment-text-outline"
+                                                data-inline="false"></span>
+                                            <span>Comment</span>
+                                        </div>
+                                        <div class="col-auto ms-5  mt-2">
+                                            <span class="iconify" data-icon="mdi:hand-heart" data-inline="false"></span>
+                                            <span>Love</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="header/header.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
